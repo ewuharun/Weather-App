@@ -23,9 +23,8 @@ form.addEventListener(('submit'), (e) => {
                 if (data.error) {
                     error_message.textContent = data.error
                 } else {
-                    forCastData.textContent = "Weather is : " +
-                        data.forecast.weather +
-                        "(" + data.forecast.description + ")," +
+                    forCastData.textContent = "Weather is : " + data.forecast.weather +
+                        "(" + data.forecast.description + "),\n" +
                         " Pressure is : " +
                         data.forecast.pressure + ", Humidity is : " +
                         data.forecast.humidity + ", kelvin temp is: " + data.forecast.kelvin + "k"
