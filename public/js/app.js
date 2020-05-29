@@ -17,7 +17,7 @@ form.addEventListener(('submit'), (e) => {
         error_message.textContent = "You must provide a location"
     } else {
 
-        fetch("http://localhost:3000/weather?address=" + address).then((response) => {
+        fetch("/weather?address=" + address).then((response) => {
             response.json().then((data) => {
                 console.log(data)
                 if (data.error) {

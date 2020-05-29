@@ -1,7 +1,7 @@
 const express = require('express')
 const path = require('path')
 const hbs = require('hbs')
-
+const port = process.env.PORT || 3000
 
 var app = express()
 var dirLocation = path.join(__dirname, '../public')
@@ -70,6 +70,6 @@ app.get('*', (req, res) => {
     res.send("My 404 page")
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('server is up on port 3000clear')
 })
