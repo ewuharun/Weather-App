@@ -1,7 +1,7 @@
 const express = require('express')
 const path = require('path')
 const hbs = require('hbs')
-console.log("hello git")
+console.log("SHA256:LqFkHsJJNQWhWKC8xuWiGf3MleXcx0lzi5xtodBkBpA harunk873@gmail.com")
 
 var app = express()
 var dirLocation = path.join(__dirname, '../public')
